@@ -189,4 +189,7 @@ int main() {
                 lihatStatistik(admin1, p);
             }
 
+        } else if (pilihan == 5) {
+            admin1.lihatInfoPetugas(petugas1);
+
         } 
