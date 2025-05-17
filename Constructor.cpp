@@ -177,4 +177,10 @@ int main() {
                 cout << "Input tidak valid.\n";
             }
 
+        } else if (pilihan == 3) {
+            cout << "Daftar Buku:\n";
+            for (auto& b : daftarBuku) {
+                lihatStatistik(admin1, b); // Panggil lewat friend function
+            }
+
         } 
