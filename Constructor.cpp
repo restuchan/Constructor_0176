@@ -113,4 +113,20 @@ int main() {
         Peminjam("Cici", 103)
     };
 
-    
+    Petugas petugas1("Susi", 1, "Level1");
+    Admin admin1;
+
+    int pilihan;
+    do {
+        cout << "\n===== Sistem Perpustakaan =====\n";
+        cout << "1. Pinjam Buku\n";
+        cout << "2. Kembalikan Buku\n";
+        cout << "3. Lihat Statistik Buku\n";
+        cout << "4. Lihat Statistik Peminjam\n";
+        cout << "5. Lihat Info Petugas\n";
+        cout << "0. Keluar\n";
+        cout << "\n===== Sistem Perpustakaan =====\n";
+        cout << "Pilih menu: ";
+        cin >> pilihan;
+
+        
