@@ -100,4 +100,11 @@ void lihatStatistik(Admin& adm, Peminjam& p) {
     p.tampilkanData();
 }
 
-int main() 
+int main() {
+    vector<Buku> daftarBuku = {
+        Buku("Struktur Data", "Pak Budi"),
+        Buku("Algoritma", "Ibu Sari"),
+        Buku("Basis Data", "Pak Anto")
+    };
+
+    
