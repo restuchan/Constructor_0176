@@ -107,4 +107,10 @@ int main() {
         Buku("Basis Data", "Pak Anto")
     };
 
+    vector<Peminjam> daftarPeminjam = {
+        Peminjam("Andi", 101),
+        Peminjam("Budi", 102),
+        Peminjam("Cici", 103)
+    };
+
     
