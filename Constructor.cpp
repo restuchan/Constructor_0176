@@ -54,4 +54,27 @@ private:
     int id;
     string levelAkses;
 
+public:
+    Petugas(string n, int i, string l) : nama(n), id(i), levelAkses(l) {}
 
+    void prosesPinjam(Buku& b, Peminjam& p) {
+        if (!b.dipinjam) {
+            b.pinjam();
+            p.pinjamBuku();
+            cout << "Buku berhasil dipinjam.\n";
+        } else {
+            cout << "Buku sedang dipinjam.\n";
+        }
+    }
+
+    void prosesKembali(Buku& b, Peminjam& p) {
+        if (b.dipinjam) {
+            b.kembalikan();
+            p.kembaliBuku();
+            cout << "Buku berhasil dikembalikan.\n";
+        } else {
+            cout << "Buku sudah tersedia.\n";
+        }
+    }
+
+    
