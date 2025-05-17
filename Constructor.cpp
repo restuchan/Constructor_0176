@@ -80,4 +80,14 @@ public:
     friend class Admin;
 };
 
-class Admin 
+class Admin {
+public:
+    void lihatInfoPetugas(const Petugas& ptg) {
+        cout << "Petugas: " << ptg.nama << ", Level Akses: " << ptg.levelAkses << endl;
+    }
+
+    friend void lihatStatistik(Admin& adm, Buku& b);
+    friend void lihatStatistik(Admin& adm, Peminjam& p);
+};
+
+
