@@ -28,4 +28,4 @@ public:
     friend void lihatStatistik(Admin&, Buku&);
 };
 
-
+class Peminjam 
