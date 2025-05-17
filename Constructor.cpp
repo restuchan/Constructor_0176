@@ -90,4 +90,14 @@ public:
     friend void lihatStatistik(Admin& adm, Peminjam& p);
 };
 
+void lihatStatistik(Admin& adm, Buku& b) {
+    cout << "Statistik Buku: ";
+    b.tampilkanInfo();
+}
+
+void lihatStatistik(Admin& adm, Peminjam& p) {
+    cout << "Statistik Peminjam: ";
+    p.tampilkanData();
+}
+
 
