@@ -77,4 +77,7 @@ public:
         }
     }
 
-    
+    friend class Admin;
+};
+
+
