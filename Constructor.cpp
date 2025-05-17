@@ -100,4 +100,4 @@ void lihatStatistik(Admin& adm, Peminjam& p) {
     p.tampilkanData();
 }
 
-
+int main() 
