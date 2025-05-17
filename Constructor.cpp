@@ -192,4 +192,13 @@ int main() {
         } else if (pilihan == 5) {
             admin1.lihatInfoPetugas(petugas1);
 
-        } 
+        } else if (pilihan == 0) {
+            cout << "Terima kasih sudah menggunakan sistem.\n";
+        } else {
+            cout << "Pilihan tidak tersedia.\n";
+        }
+
+    } while (pilihan != 0);
+
+    return 0;
+}
