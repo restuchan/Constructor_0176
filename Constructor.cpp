@@ -34,4 +34,17 @@ private:
     int id;
     int totalPinjaman;
 
+public:
+    Peminjam(string n, int i) : nama(n), id(i), totalPinjaman(0) {}
+
+    void tampilkanData() {
+        cout << "Peminjam: " << nama << " (ID: " << id << "), Total Pinjaman: " << totalPinjaman << endl;
+    }
+
+    void pinjamBuku() { totalPinjaman++; }
+    void kembaliBuku() { if (totalPinjaman > 0) totalPinjaman--; }
+
+    friend class Petugas;
+    friend void lihatStatistik(Admin&, Peminjam&);
+};
 
