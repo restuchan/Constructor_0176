@@ -48,3 +48,4 @@ public:
     friend void lihatStatistik(Admin&, Peminjam&);
 };
 
+class Petugas 
