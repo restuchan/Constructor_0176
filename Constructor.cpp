@@ -48,4 +48,10 @@ public:
     friend void lihatStatistik(Admin&, Peminjam&);
 };
 
-class Petugas 
+class Petugas {
+private:
+    string nama;
+    int id;
+    string levelAkses;
+
+
