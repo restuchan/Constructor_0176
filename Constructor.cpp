@@ -153,4 +153,28 @@ int main() {
                 cout << "Input tidak valid.\n";
             }
 
+        } else if (pilihan == 2) {
+            cout << "Daftar Buku:\n";
+            for (int i = 0; i < (int)daftarBuku.size(); i++) {
+                cout << i << ". ";
+                daftarBuku[i].tampilkanInfo();
+            }
+            cout << "Pilih nomor buku yang ingin dikembalikan: ";
+            int idxBuku; cin >> idxBuku;
+
+            cout << "Daftar Peminjam:\n";
+            for (int i = 0; i < (int)daftarPeminjam.size(); i++) {
+                cout << i << ". ";
+                daftarPeminjam[i].tampilkanData();
+            }
+            cout << "Pilih nomor peminjam: ";
+            int idxPeminjam; cin >> idxPeminjam;
+
+            if (idxBuku >= 0 && idxBuku < (int)daftarBuku.size() &&
+                idxPeminjam >= 0 && idxPeminjam < (int)daftarPeminjam.size()) {
+                petugas1.prosesKembali(daftarBuku[idxBuku], daftarPeminjam[idxPeminjam]);
+            } else {
+                cout << "Input tidak valid.\n";
+            }
+
         } 
