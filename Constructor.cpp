@@ -28,4 +28,10 @@ public:
     friend void lihatStatistik(Admin&, Buku&);
 };
 
-class Peminjam 
+class Peminjam {
+private:
+    string nama;
+    int id;
+    int totalPinjaman;
+
+
