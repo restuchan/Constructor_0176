@@ -183,4 +183,10 @@ int main() {
                 lihatStatistik(admin1, b); // Panggil lewat friend function
             }
 
+        } else if (pilihan == 4) {
+            cout << "Daftar Peminjam:\n";
+            for (auto& p : daftarPeminjam) {
+                lihatStatistik(admin1, p);
+            }
+
         } 
